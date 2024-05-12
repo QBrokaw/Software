@@ -1,10 +1,10 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+[Github](https://github.com/QBrokaw/Software/blob/main/javapractice/GuessTheNumber.java)]
 
-{Provide a description of the software that you wrote to demonstrate the Java language.}
+{I created a guessing game. The game chooses a random number and the player tries to guess it.}
 
-{Describe your purpose for writing this software.}
+{This game was created to help me learn Java.}
 
 {Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
 
@@ -12,21 +12,21 @@
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+{I used VS Code with the Java extention enabled}
 
-{Describe the programming language that you used and any libraries.}
+{This was programmed using Java and the Util library}
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Web Site Name](https://www.w3schools.com/java/)
+- [Web Site Name](https://www.java-made-easy.com/)
 
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
 
-- Item 1
-- Item 2
-- Item 3
+- Item 1 add a limit to the number of guesses
+- Item 2 add pics or art
+- Item 3 add music to the game and sound effects
