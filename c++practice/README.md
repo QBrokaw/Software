@@ -4,7 +4,7 @@
 
 # This was created to help me learn C++
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/rUqOfkH61A8)
 
 # Development Environment
 
