@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My MP3 Player</title>
+  <style>
+    /*The only style part of the program is the size of the MP3 player */
+    .audio-player {
+      width: 300px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="audio-player"> <!--This is the controls for the Audio player-->
+    <audio id="my-audio" controls>
+      <source src="mp3/TheSaint.mp3" type="audio/mpeg"> <!--You have to start the player with an mp3-->
+    </audio>
+    <img id="album-cover" src="mp3/Saint.jpg" alt="Album Cover"> <!--This is the starting album cover-->
+    <br>
+    <br>
+    <button id="play-button">Play</button>
+    <button id="pause-button">Pause</button>
+    <button id="next-button">Next</button>
+  </div>
+  <!--This is my Type Script code-->
+  <script> 
+    const audio = document.getElementById('my-audio'); //This is the mp3 thats on deck to be played
+    const playButton = document.getElementById('play-button');  //This is the play button 
+    const pauseButton = document.getElementById('pause-button');  //This is the pause button
+    const nextButton = document.getElementById('next-button');  //This is the next button
+    const albumCover = document.getElementById('album-cover');  //This is the album currently being displayed
+
+    // This is all the MP3's
+    const trackUrls = [
+      'mp3/TheSaint.mp3',
+      'mp3/Halcyon.mp3',
+      'mp3/Heroes.mp3',
+    ];
+    //This is all the album covers
+    const imageUrls = [
+      'mp3/Saint.jpg',
+      'mp3/Halcyon.jpeg',
+      'mp3/hero2.jpeg',
+    ];
+    
+    let currentIndex = 0;
+        //This is looking for the click on the play button
+    playButton.addEventListener('click', () => {
+      audio.play();
+    });
+        //This is looking for the click on the play button
+    pauseButton.addEventListener('click', () => {
+      audio.pause();
+    });
+        //This is looking for the click on the next button
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % trackUrls.length;  //This is how you keep track of what song and album is on the screen and whats next
+      audio.src = trackUrls[currentIndex];  //This is the next song on deck
+      albumCover.src = imageUrls[currentIndex]; //This is the next album cover on deck
+      audio.play(); //Let the song play
+    });
+  </script>
+</body>
+</html>
